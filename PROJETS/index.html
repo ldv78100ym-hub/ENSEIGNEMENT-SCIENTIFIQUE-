@@ -1,1 +1,317 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le projet expérimental et numérique</title>
+    
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        h1 { margin: 0; font-size: 2.5em; }
+        h2 { color: #2980b9; border-bottom: 2px solid #bdc3c7; padding-bottom: 10px; margin-top: 30px;}
+        h3 { color: #16a085; }
+        .section {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #fdfdfd;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th { background-color: #2980b9; color: white; }
+        .canvas-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        canvas {
+            background-color: white;
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .latex-box {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin: 10px 0;
+        }
+        /* Classe ajoutée pour l'intégration des images */
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Le projet expérimental et numérique</h1>
+        <p>Lycée Léonard De Vinci | Année 2025-2026</p>
+    </header>
+
+    <div class="section">
+        <h2>1. Les objectifs de la démarche scientifique</h2>
+        <p>Le projet vise à se confronter à la pratique d'une démarche scientifique structurée selon les étapes suivantes :</p>
+        <ol>
+            <li><strong>Problématique et hypothèses</strong></li>
+            <li><strong>Expérience et Résultats</strong></li>
+            <li><strong>Interprétation et Conclusion</strong></li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>2. Méthodologie : Comment procéder ?</h2>
+        <p>Le travail s'effectue obligatoirement par groupe de 3 élèves. La démarche repose sur :</p>
+        <ul>
+            <li>L'utilisation d'un capteur durant l'expérimentation (ex: Arduino, capteur du téléphone via Fizziq, microbit, caméra thermique, thermomètre, etc.).
+                <center><img src="image_caaf81.png" alt="Exemple de montage Arduino avec capteurs et actionneurs" class="img-fluid" style="max-width: 400px;"></center>
+            </li>
+            <li>L'acquisition numérique de données en réalisant plusieurs acquisitions pour tester différentes conditions, différents capteurs et vérifier la répétabilité.
+                <center><img src="image_caaff9.png" alt="Tableau de données d'acquisition météo" class="img-fluid"></center>
+            </li>
+            <li>La présentation, le traitement et l'interprétation des données via l'utilisation d'outils statistiques et le choix d'une représentation graphique adaptée.
+                
+            </li>
+        </ul>
+        <center>
+        	<div class="canvas-container">
+            		<h3>Exemple de traitement de données</h3>
+            		<center><img src="image_cb0197.png" alt="Traitement des données et graphique sur tableur" class="img-fluid" style="max-width: 400px;"></center>
+            		<p><em>Représentation visuelle des acquisitions de données à l'aide d'outils statistiques.</em></p>
+        	</div>
+	</center>
+    </div>
+
+    <div class="section">
+        <h2>3. Idées de projets et thématiques</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Physique & Environnement</h3>
+                <ul>
+                    <li><strong>Albédo :</strong> Mesure de la température de plusieurs matériaux de couleurs différentes exposés au soleil.
+                        <img src="image_cb01fc.png" alt="Schéma de l'Albédo" class="img-fluid">
+                        <div class="latex-box">Exemple de formulation mathématique de l'Albédo : $$\alpha = \frac{E_{reflechie}}{E_{incidente}}$$</div>
+                    </li>
+                    <li><strong>Impact du CO2 :</strong> Mesure du pH dans diverses solutions selon le taux de CO2 pour étudier l'acidification des océans.<br>
+			<img src="image_cb01gc.png" alt="Schéma de l'Albédo" class="img-fluid">
+                    <div class="latex-box">Lien avec le pH : $$pH = -\log_{10}([H^+])$$</div></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Biologie & Santé</h3>
+                <ul>
+                    <li><strong>Germination :</strong> Établir un lien entre la germination des plantes et la luminosité.
+                        <img src="image_cb01da.png" alt="Germination des plantes" class="img-fluid">
+                    </li>
+                    <li><strong>Effort et température :</strong> Mesure de l'évolution de la température de différentes parties du corps lors d'efforts physiques.
+                        <img src="image_cb0238.png" alt="Caméra thermique montrant l'effort et la température" class="img-fluid">
+                    </li>
+		    <li><strong>Impact du CO2 dans l’acidification des océans :</strong> Mesure du taux de CO2 dans les salles de classe, étude du renouvellement de l'air et de la nécessité d'aérer.
+			<img src="image_cb0768.png" alt="Impact du CO2 dans l’acidification des océans" class="img-fluid">
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Acoustique & Ondes</h3>
+                <ul>
+                    <li><strong>Silence je travaille :</strong> Mesure de différents niveaux sonores dans le Lycée selon l'horaire et l'endroit.
+                        <img src="image_cb02ae.png" alt="Affiche Silence je travaille" class="img-fluid">
+                    </li>
+                    <li><strong>Tasse et Fréquence :</strong> Mesure des fréquences fondamentales des sons émis lors du tapotement du fond d'une tasse de café.
+                        <img src="image_cb055d.png" alt="Tasse de café" class="img-fluid">
+                    </li>
+                    <li><strong>Chladni :</strong> Faire le lien entre la forme du plateau, la fréquence et la figure géométrique du son.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h2>Projets d'établissement en cours</h2>
+        <div class="grid">
+            <div class="card">
+                <ul>
+                    <li><strong>La Ruche :</strong> Comparer plusieurs sites propices dans l'enceinte du lycée (favoriser l'envol, éviter les extrêmes) et identifier les paramètres nécessaires à la bonne santé des abeilles en testant des capteurs.
+			<img src="image_dhg65.png" alt="Qualité de l'air intérieur" class="img-fluid">
+			<ul>
+  <li><strong>Comparer plusieurs sites propices</strong> dans l'enceinte du lycée.</li>
+  <li><strong>Identifier les paramètres nécessaires</strong> à une bonne situation de la ruche (favoriser l'envol des abeilles, éviter les extrêmes climatiques...).</li>
+  <li><strong>Surveiller la santé de la colonie</strong> en identifiant les paramètres biologiques et environnementaux essentiels.</li>
+  <li><strong>Construire et tester des capteurs adaptés</strong> pour le suivi technique.</li>
+  <li><strong>Mesurer la production de miel</strong> de manière précise.</li>
+</ul>
+		    </li>
+		</ul>
+	    </div>
+	    <div class="card">
+		<ul>
+                    <li><strong>Projet Basse Vision :</strong> Installer au sein du lycée un système permettant à des personnes malvoyantes de se repérer à l'aide de bracelets émetteurs et de boîtiers.
+			<img src="image_dhg76.png" alt="Qualité de l'air intérieur" class="img-fluid">
+			<ul>
+  <li>Les personnes porteraient un <strong>bracelet émetteur</strong> comportant un/plusieurs boutons <strong>déclenchant une réponse</strong> indiquant la localisation et provenant de boîtiers situés à différents endroits du lycée.</li>
+  <li>Quel est le <strong>niveau sonore nécessaire</strong> pour que la réponse des boîtiers soit <strong>audible</strong> quel que soit le moment de la journée ?</li>
+  <li>Suite à la sensibilisation réalisée avec l'association BruitParif : le niveau sonore dans le lycée (Couloirs ? Cantine ? Salle de classe ?) est-il <strong>satisfaisant</strong> ?</li>
+	</ul>
+		    </li>
+		</ul>
+	    </div>
+	    <div class="card">
+		<ul>
+                    <li><strong>Qualité de l'air :</strong> Mesure du taux de CO2 dans les salles de classe, étude du renouvellement de l'air et de la nécessité d'aérer.
+                        <img src="image_dhg87.png" alt="Qualité de l'air intérieur" class="img-fluid">
+			<ul>
+  <li>Quelle est la <strong>qualité de l'air</strong> dans les salles de classe <strong>avant / après cours</strong> ?</li>
+  <li>Faut-il <strong>aérer les salles de classe</strong> ? À quelle <strong>fréquence</strong> ?</li>
+  <li><strong>Définir</strong> la qualité de l'air.</li>
+  <li><strong>Identifier les paramètres</strong> qui peuvent varier.</li>
+</ul>
+                    </li>
+                </ul>
+            </div>
+	</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="section">
+        <h2>4. Par où commencer ?</h2>
+        <ol>
+            <li><strong>S'organiser :</strong> Former un groupe de 3 ou 4 élèves.</li>
+            <li><strong>Brainstorming :</strong> Trouver une idée séduisante, y associer des mots spontanés, trouver un paramètre mesurable et lui associer un capteur pour formuler une problématique.</li>
+            <li><strong>Validation :</strong> Choisir un projet et envoyer un mail via l'ENT à votre professeur en indiquant le nom des élèves et le titre du projet. Attention : Premier arrivé, premier servi !</li>
+            <li><strong>Suivi :</strong> Tenir un carnet de bord pour écrire votre avancée séance après séance.</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>5. Impact et Évaluation</h2>
+        <p>Ce projet sert d'entraînement pour le grand oral de terminale et inclut la réalisation d'un poster scientifique pour communiquer au sein de l'établissement.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Critère d'évaluation</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Investissement (individuel et du groupe)</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Poster scientifique</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Présentation orale (10 min de présentation + 5-10 min de discussion avec le jury)</td>
+                    <td>20</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<script>
+    window.onload = function() {
+        const canvas = document.getElementById('statChart');
+        const ctx = canvas.getContext('2d');
+        
+        const data = [
+            { label: "Acquisition 1", value: 30, color: "#3498db" },
+            { label: "Acquisition 2", value: 20, color: "#2ecc71" },
+            { label: "Acquisition 3", value: 25, color: "#e74c3c" },
+            { label: "Acquisition 4", value: 25, color: "#f1c40f" }
+        ];
+
+        let total = data.reduce((sum, item) => sum + item.value, 0);
+        let startAngle = 0;
+        let centerX = canvas.width / 2;
+        let centerY = canvas.height / 2;
+        let radius = Math.min(centerX, centerY) - 20;
+
+        data.forEach(item => {
+            let sliceAngle = (item.value / total) * 2 * Math.PI;
+            
+            ctx.beginPath();
+            ctx.moveTo(centerX, centerY);
+            ctx.arc(centerX, centerY, radius, startAngle, startAngle + sliceAngle);
+            ctx.closePath();
+            ctx.fillStyle = item.color;
+            ctx.fill();
+            
+            ctx.lineWidth = 2;
+            ctx.strokeStyle = "#ffffff";
+            ctx.stroke();
+
+            startAngle += sliceAngle;
+        });
+
+        ctx.font = "14px Arial";
+        ctx.fillStyle = "#333";
+        ctx.textAlign = "center";
+        ctx.fillText("Répartition des données acquises", centerX, canvas.height - 5);
+    };
+</script>
+
+</body>
+</html>
